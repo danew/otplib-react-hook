@@ -1,0 +1,26 @@
+{
+  "scripts": {
+    "build": "tsup src/index.ts --minify --format esm,cjs && tsc --emitDeclarationOnly --declaration"
+  },
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "devDependencies": {
+    "@types/qrcode": "^1.4.2",
+    "@types/react": "^18.0.8",
+    "qrcode": "^1.5.0",
+    "react": "^18.1.0",
+    "tsup": "^5.12.6",
+    "typescript": "^4.6.3"
+  },
+  "dependencies": {
+    "@otplib/core": "^12.0.1",
+    "@otplib/plugin-base32-enc-dec": "^12.0.1",
+    "@otplib/plugin-crypto-js": "^12.0.1"
+  },
+  "peerDependencies": {
+    "qrcode": "^1.0.0",
+    "react": "^16.8.0 || ^17.0.0 || ^18.0.0"
+  },
+  "license": "UNLICENSE"
+}

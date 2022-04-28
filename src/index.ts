@@ -1,0 +1,1 @@
+export { useOtpAuthenticator, useOtpAuthenticator as default } from './useOtpAuthenticator'
